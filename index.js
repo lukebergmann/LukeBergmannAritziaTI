@@ -5,6 +5,7 @@ const dressArray = [
   "Product Images/Image 3.jpg",
   "Product Images/Image 4.jpg",
   "Product Images/Image 5.jpg",
+  "Product Images/Image 6.jpg",
 ];
 const paymentArray = [
   "Icons/Payments/Payment 1.png",
