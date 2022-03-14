@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Oxygen", sans-serif;
+  min-height: 100vh;
+  position: absolute;
+}
+
+.searchSection,
+.headingSection,
+.filterSection,
+.dressGallerySection,
+.furtherResourceSection {
+  padding: 0px 10px;
+}
+
+/* Search Section */
+.searchSection {
+  display: flex;
+  font-size: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.topSearchLeft {
+  display: flex;
+  align-items: center;
+}
+.topSearchRight {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+}
+.searchIcon {
+  width: 20px;
+  height: 20px;
+}
+.menu:hover,
+.bag:hover,
+.filter:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* Heading Section */
+.headingSection {
+  margin-bottom: 60px;
+}
+.dressHeading {
+  font-family: "Noto Serif Display", serif;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+.dressSubHeading {
+  margin-top: 0;
+  font-size: 20px;
+  word-spacing: 1px;
+  font-weight: 300;
+  width: 370px;
+}
+
+/* Filter Section */
+.filterSection {
+  display: flex;
+  flex-direction: column;
+}
+.topFilter {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+#dressFilterSection {
+  display: flex;
+  margin-top: 0;
+  flex-direction: row;
+  font-size: 10px;
+  padding-left: 0px;
+  list-style: none;
+  overflow-x: auto !important;
+}
+.filterText {
+  background-color: rgba(219, 219, 219, 0.361);
+  margin-right: 10px;
+  padding: 5px;
+}
+.filterText:hover {
+  cursor: pointer;
+  background-color: rgba(219, 219, 219, 0.491);
+}
+
+/* Dress Gallery Section */
+.dressGallerySection {
+  display: flex;
+  flex-wrap: wrap;
+}
+#dressGallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.dressDiv {
+  margin-right: 10px;
+}
+.imageInfoDiv {
+  height: 100px;
+}
+.brand,
+.productName,
+.price {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* Futher Resources Section */
+.furtherResourceSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 75px;
+  background-color: rgba(219, 219, 219, 0.485);
+}
+#getHelpSection,
+#myAccountSection,
+#aboutUsSection {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  list-style: none;
+  padding-right: 20px;
+}
+.furtherResourceLeft {
+  display: flex;
+  flex-direction: column;
+}
+.furtherResourceRight {
+  display: flex;
+  flex-direction: row;
+}
+.furtherResourceTop {
+  margin-bottom: 50px;
+}
+.furtherResourceBottom {
+  border-bottom: 1px solid black;
+  width: 350px;
+}
+.aboutItem,
+.accountItem,
+.helpItem {
+  font-size: 12px;
+  padding: 7px 0px;
+}
+.aboutItem:hover,
+.accountItem:hover,
+.helpItem:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.shoppingIn {
+  font-size: 12px;
+}
+.currency {
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  width: 120px;
+}
+.resourceHeading {
+  font-size: 10px;
+  opacity: 0.5;
+}
+.inputEmail {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+/* Footer Section */
+.footer {
+  background-color: black;
+  display: flex;
+  margin: 0;
+  padding: 10px 0px;
+  width: 100%;
+  justify-content: space-between;
+}
+#paymentGallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+  margin-right: 60px;
+}
+.paymentMethod {
+  width: 12%;
+}
+.footerLinks {
+  display: flex;
+  color: white;
+  margin-left: 60px;
+}
+.footerLink {
+  font-family: "Oxygen", sans-serif;
+  opacity: 0.5;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.footerLink:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* SmartPhone */
+@media only screen and (min-width: 200px) and (max-width: 479px) {
+  /* Search Section */
+  .searchSection {
+    font-size: 16px;
+  }
+  /* Heading Section */
+  .dressHeading {
+    font-size: 70px;
+  }
+  .dressSubHeading {
+    width: 370px;
+    font-size: 30px;
+  }
+
+  /* Dress Gallery Section */
+  .dress {
+    width: 300px;
+  }
+
+  /* Further Resource Section */
+  #myAccountSection,
+  #getHelpSection,
+  #aboutUsSection {
+    display: none;
+  }
+
+  /* Footer Section */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLinks {
+    width: 70% !important;
+    margin-bottom: 20px;
+  }
+  .footerLink {
+    font-size: 20px;
+  }
+  #paymentGallery {
+    margin-left: 60px;
+    margin-bottom: 60px;
+    width: 80% !important;
+  }
+}
+
+/* Shared Responsive Design */
+@media only screen and (min-width: 200px) and (max-width: 1224px) {
+  /* Further Resources Section */
+  #myAccountSection,
+  #getHelpSection,
+  #aboutUsSection {
+    display: none;
+  }
+  .furtherResourceSection {
+    flex-direction: column-reverse;
+  }
+  .furtherResourceRight {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .furtherResourceBottom {
+    border-bottom: none;
+  }
+  .furtherResourceTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .currency {
+    margin-left: 3px;
+    font-size: 12px;
+    width: 100px;
+  }
+  .inputEmail {
+    display: none;
+  }
+  .resourceHeading {
+    opacity: 0.8;
+    font-size: 14px;
+  }
+  .tabletHeading {
+    font-size: 18px;
+    opacity: 1;
+  }
+
+  /* Footer Section */
+  .footerLinks {
+    width: 30%;
+    flex-wrap: wrap;
+  }
+  #paymentGallery {
+    width: 40%;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+  /* Search Section */
+  .searchSection {
+    font-size: 16px;
+  }
+  .searchIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Heading Section */
+  .dressHeading {
+    font-size: 60px;
+  }
+  .dressSubHeading {
+    width: 600px;
+    font-size: 30px;
+  }
+}
