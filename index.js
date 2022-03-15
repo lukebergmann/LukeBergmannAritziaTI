@@ -78,8 +78,8 @@ function showDresses() {
     let price = document.createElement("p");
     price.className = "price";
     price.innerHTML = "Price";
-    let image = document.createTextNode(dress);
-    dressImg.append(image);
+    // let image = document.createTextNode(dress);
+    dressImg.append(dress);
     imageDiv.append(dressImg);
     imageDiv.append(imageInfoDiv);
     imageInfoDiv.append(brand);
